@@ -2,17 +2,11 @@ package com.vicenteaguilera.formutec;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toolbar;
-
 import com.vicenteaguilera.formutec.layouts_principales.PrincipalActivity;
-
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-            catch (Exception ex){
+            catch (Exception ignored){
 
             }
         },2000);

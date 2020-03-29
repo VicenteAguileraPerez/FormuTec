@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splashscreen">
+        app:srcCompat="@drawable/splashscreen"
+        android:contentDescription="@string/icono_prinicipal">
 
     </ImageView>
 </androidx.constraintlayout.widget.ConstraintLayout>

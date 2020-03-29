@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vicenteaguilera.formutec" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.vicenteaguilera.formutec">
 
     <application
         android:allowBackup="true"
@@ -8,12 +9,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_sigma_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".layouts_principales.PrincipalActivity" >
-        </activity>
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name=".layouts_secundarias.AcercaActivity"></activity>
+        <activity android:name=".layouts_principales.PrincipalActivity"></activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

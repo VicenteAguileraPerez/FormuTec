@@ -16,11 +16,11 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/about"
-        android:title="Acerca de"
+        android:title="@string/acerca_de"
         android:orderInCategory="1"
         app:showAsAction="never" />
     <item android:id="@+id/complaints_and_suggestions"
-        android:title="Quejas y sugenrencias"
+        android:title="@string/quejas_y_sugenrencias"
         android:orderInCategory="2"
         app:showAsAction="never" />
 </menu>
