@@ -3,11 +3,14 @@ package com.vicenteaguilera.formutec;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toolbar;
+
+import com.vicenteaguilera.formutec.layouts_principales.PrincipalActivity;
 
 import java.util.Objects;
 
@@ -24,9 +27,13 @@ public class MainActivity extends AppCompatActivity {
         {
             try {
                 imageView_splash_screen.setImageResource(R.drawable.info);
+                Intent intent  = new Intent(MainActivity.this, PrincipalActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                finish();
             }
             catch (Exception ex){
-                ///Toast.makeText(getContext(), "Error al cargar vista principal.", Toast.LENGTH_SHORT).show();
+
             }
         },2000);
     }

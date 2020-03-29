@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--
+    Los elementos <item> tienen cinco atributos prioritarios que debemos establecer para darles forma, así que veamos sus definiciones:
+    id: Representa la identificación de cada ítem para ser referenciado en nuestro archivo R.java.
+    title: Es un string asignado para el título del botón.
+    icon: Aquí asignaremos el icono que representará la acción en la Action Bar.
+          Recuerda usar una referencia hacia tus recursos drawables.
+    showAsAction: Este atributo permite establecer cuando y donde veremos nuestros botones de acción.
+                  Las opciones más usadas son ifRoom y never. La primera indica que si existe espacio
+                  disponible para nuestro ítem, entonces se visualizará. La segunda indica que nunca debe aparecer
+                  en la Action Bar, solamente en el despliegue de botones de poco uso (Action overflow).
+    orderInCategory: Es un valor entero que establece la preponderancia que tiene un ítem con respecto a otro.
+                     Lo que quiere decir que un ítem con categoría 1 es más prioritario que uno en categoría 2.-->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/about"
+        android:title="Acerca de"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+    <item android:id="@+id/complaints_and_suggestions"
+        android:title="Quejas y sugenrencias"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+</menu>
