@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".layouts_secundarias.QuejasSugerenciasActivity"></activity>
+        <activity android:name=".layouts_secundarias.QuejasSugerenciasActivity" />
         <activity android:name=".layouts_secundarias.AcercaActivity" />
         <activity android:name=".layouts_principales.PrincipalActivity" />
         <activity
