@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.vicenteaguilera.formutec.R;
 import com.vicenteaguilera.formutec.layouts_secundarias.AcercaActivity;
+import com.vicenteaguilera.formutec.layouts_secundarias.QuejasSugerenciasActivity;
 
 public class PrincipalActivity extends AppCompatActivity {
 
@@ -38,7 +39,7 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.complaints_and_suggestions:
-                intent = new Intent(PrincipalActivity.this, AcercaActivity.class);
+                intent = new Intent(PrincipalActivity.this, QuejasSugerenciasActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FormuTec</string>
     <string name="acerca_de">Acerca de</string>
-    <string name="quejas_y_sugenrencias">Quejas y sugenrencias</string>
-    <string name="icono_prinicipal">icono prinicipal</string>
+    <string name="quejas_y_sugerencias">Quejas y sugerencias</string>
+    <string name="icono_prinicipal">icon principal</string>
 </resources>

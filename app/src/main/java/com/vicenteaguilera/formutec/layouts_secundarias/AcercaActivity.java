@@ -12,5 +12,6 @@ public class AcercaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acerca);
+        setTitle(R.string.acerca_de);
     }
 }

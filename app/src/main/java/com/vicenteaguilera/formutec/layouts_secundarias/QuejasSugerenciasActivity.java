@@ -12,5 +12,6 @@ public class QuejasSugerenciasActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quejas_sugerencias);
+        setTitle(R.string.quejas_y_sugerencias);
     }
 }

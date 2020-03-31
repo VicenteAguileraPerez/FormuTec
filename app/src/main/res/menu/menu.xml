@@ -20,7 +20,7 @@
         android:orderInCategory="1"
         app:showAsAction="never" />
     <item android:id="@+id/complaints_and_suggestions"
-        android:title="@string/quejas_y_sugenrencias"
+        android:title="@string/quejas_y_sugerencias"
         android:orderInCategory="2"
         app:showAsAction="never" />
 </menu>
