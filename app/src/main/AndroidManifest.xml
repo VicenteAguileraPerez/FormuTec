@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.vicenteaguilera.formutec">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_sigma"
@@ -10,9 +10,12 @@
         android:roundIcon="@mipmap/ic_sigma_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="AllowBackup">
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup"
+        >
         <activity android:name=".layouts_secundarias.QuejasSugerenciasActivity" />
-        <activity android:name=".layouts_secundarias.AcercaActivity" />
+        <activity android:name=".layouts_secundarias.AcercaActivity"
+            />
         <activity android:name=".layouts_principales.PrincipalActivity" />
         <activity
             android:name=".MainActivity"
