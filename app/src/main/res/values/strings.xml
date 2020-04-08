@@ -3,4 +3,11 @@
     <string name="acerca_de">Acerca de</string>
     <string name="quejas_y_sugerencias">Quejas y sugerencias</string>
     <string name="icono_prinicipal">icon principal</string>
+    <string name="enviar">Enviar</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="nombre">Nombre</string>
+    <string name="queja">Queja</string>
+    <string name="sugerencia">Sugerencia</string>
+    <string name="cont_ctanos">Contáctanos</string>
 </resources>

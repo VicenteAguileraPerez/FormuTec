@@ -13,14 +13,16 @@
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup"
         >
-        <activity android:name=".layouts_secundarias.QuejasSugerenciasActivity" />
+        <activity android:name=".layouts_secundarias.QuejasSugerenciasActivity"
+            android:parentActivityName=".layouts_principales.PrincipalActivity"/>
         <activity android:name=".layouts_secundarias.AcercaActivity"
+            android:parentActivityName=".layouts_principales.PrincipalActivity"
             />
         <activity android:name=".layouts_principales.PrincipalActivity" />
         <activity
             android:name=".MainActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+           >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -8,6 +8,8 @@ import android.os.Handler;
 import android.widget.ImageView;
 import com.vicenteaguilera.formutec.layouts_principales.PrincipalActivity;
 
+import java.util.Objects;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView imageView_splash_screen;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Objects.requireNonNull(getSupportActionBar()).hide();
         imageView_splash_screen =findViewById(R.id.imageView_splash_screen);
         new Handler().postDelayed(() ->
         {
