@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="algebra">
+        <item>Propiedades de las operaciones</item>
+        <item>Propiedades de los radicales</item>
+        <item>Propiedades de los exponentes</item>
+        <item>Propiedades de los logatirmos</item>
+        <item>Propiedades de las desigualdades</item>
+        <item>Propiedades de facrorizaciones comunes</item>
+        <item>Propiedades de productos notables</item>
+    </string-array>
+</resources>

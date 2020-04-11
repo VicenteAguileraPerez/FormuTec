@@ -10,4 +10,18 @@
     <string name="queja">Queja</string>
     <string name="sugerencia">Sugerencia</string>
     <string name="cont_ctanos">Contáctanos</string>
+
+    <string name="algebra">Álgebra</string>
+    <string name="algebra_lineal">Álgebra Lineal</string>
+    <string name="geometria">Geometría</string>
+    <string name="geometria_analitica">Geometría Analítica</string>
+    <string name="trigonometria">Trigonometría</string>
+    <string name="calculo_diferencial">Cálculo Diferencial</string>
+    <string name="calculo_integral">Cálculo Integral</string>
+    <string name="calculo_vectorial">Cálculo Vectorial</string>
+    <string name="ecuaciones_diferenciales">Ecuaciones Diferenciales</string>
+    <string name="probabilidad_estadistica">Probabilidad y Estadística</string>
+    <string name="matematicas_financieras">Matemáticas Financieras</string>
+
+
 </resources>
