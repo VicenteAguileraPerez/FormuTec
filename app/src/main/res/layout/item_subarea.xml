@@ -4,13 +4,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite">
 
-    <ListView
-        android:id="@+id/list_view_items"
+    <ImageView
+        android:id="@+id/image_subarea"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="714dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/k_11_1_mf_progresiones"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

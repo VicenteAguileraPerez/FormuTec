@@ -2,9 +2,7 @@ package com.vicenteaguilera.formutec.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -13,20 +11,15 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.TwoLineListItem;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.vicenteaguilera.formutec.Auxiliar.Statics;
 import com.vicenteaguilera.formutec.Model.Area;
 import com.vicenteaguilera.formutec.R;
 import com.vicenteaguilera.formutec.layouts_principales.FormulaActivity;
-import com.vicenteaguilera.formutec.layouts_principales.PrincipalActivity;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class AdaptadorArea extends RecyclerView.Adapter<AdaptadorArea.AreaViewHolder>
@@ -94,11 +87,13 @@ public class AdaptadorArea extends RecyclerView.Adapter<AdaptadorArea.AreaViewHo
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view2, int i, long l)
                 {
-                    String titulo = String.valueOf(listaAreas.get(getAdapterPosition()).getTitle());
+                    String titulo = itemView.getContext().getResources().getString(listaAreas.get(getAdapterPosition()).getTitle());
                     Intent intent = new Intent(itemView.getContext(), FormulaActivity.class);
                     intent.putExtra("titulo",titulo);
+                    intent.putExtra("area",getAdapterPosition());
+                    intent.putExtra("subarea",i);
                     itemView.getContext().startActivity(intent);
-                    //Toast.makeText(itemView.getContext(), "Selecciono" + adapterView.getItemAtPosition(i), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(itemView.getContext(), getAdapterPosition()+"Selecciono" + i, Toast.LENGTH_SHORT).show();
                 }
             });
 

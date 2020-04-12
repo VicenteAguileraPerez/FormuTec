@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Statics
+public class StaticsMenus
 {
     public static List<String> Algebra = new ArrayList<>(Arrays.asList(
             "Propiedades aritméticas",
