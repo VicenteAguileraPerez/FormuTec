@@ -14,8 +14,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
-        <activity android:name=".layouts_principales.FormulaActivity"
-            android:parentActivityName=".layouts_principales.PrincipalActivity"></activity>
+        <activity android:name=".layouts_principales.FormulaActivity"></activity>
         <activity
             android:name=".layouts_secundarias.QuejasSugerenciasActivity"
             android:parentActivityName=".layouts_principales.PrincipalActivity" />

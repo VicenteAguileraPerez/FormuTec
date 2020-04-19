@@ -70,6 +70,7 @@
 
             <Button
                 style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/button_enviar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -118,12 +119,12 @@
                 android:layout_margin="10dp"
                 android:ems="10"
                 android:hint="@string/nombre"
-                android:inputType="textPersonName"
+                android:inputType="textCapWords"
                 app:layout_constraintBottom_toTopOf="@+id/guideline4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline3"
-                android:importantForAutofill="no" />
+                android:importantForAutofill="" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline7"

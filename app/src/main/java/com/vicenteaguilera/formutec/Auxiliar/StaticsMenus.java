@@ -9,7 +9,10 @@ import java.util.List;
 
 public class StaticsMenus
 {
-    public static List<String> Algebra = new ArrayList<>(Arrays.asList(
+    public final static String EMAILSENDER ="formutecitsu@gmail.com";
+    public final static String PASSWORD ="FormuTecITSU1234";//fira del app
+
+    public static List<String> algebra = new ArrayList<>(Arrays.asList(
             "Propiedades aritméticas",
             "Propiedades de los radicales",
             "Propiedades de los exponentes",
@@ -26,14 +29,50 @@ public class StaticsMenus
             "Serie de Taylor",
             "Serie de Maclaurin",
             "Series de potencias"));
-    public static List<String> Geometria = new ArrayList<>(Arrays.asList(
+    public static List<String> algebraLineal = new ArrayList<>(Arrays.asList(
+            "Propiedades de los números complejos",
+            "Módulo y argumento",
+            "Conjugado de un complejo",
+            "Representación de un complejo",
+            "Operaciones de forma binomial",
+            "Operaciones de forma polar",
+            "Potencia y Raíces",
+            "Propiedades de las matrices",
+            "Matriz nula",
+            "Matriz identidad",
+            "Matriz triangular",
+            "Matriz simétrica",
+            "Matriz adjunta",
+            "Matriz transpuesta",
+            "Matriz inversa",
+            "Matriz ortogonal",
+            "Suma y resta de matrices",
+            "Multiplicación de matrices",
+            "Propiedades de los determinates",
+            "Determinantes",
+            "Regla de Cramer",
+            "Regla de Sarrus",
+            "Teorema de Rouché-Frobenius",
+            "Vectores y su magnitud",
+            "Operaciones con vectores",
+            "Vector unitario",
+            "Punto medio",
+            "Angulo entre vectores",
+            "Producto punto y sus propiedades",
+            "Proyecciones de vectores",
+            "producto cruz y sus propiedades",
+            "Normalización P",
+            "Proceso de Gram-Schmidt",
+            "Vectores y valores propios"
+            ));
+    public static List<String> geometria = new ArrayList<>(Arrays.asList(
             "Ángulos de los polígonos",
             "Tipos de ángulos",
             "Conversiones de radianes a grados",
             "Áreas y Períemtros de figuras geométricas",
             "Volúmenes de cuerpos geométricos"
     ));
-    public static List<String> GeometriaAnalitica = new ArrayList<>(Arrays.asList(
+    public static List<String> geometriaAnalitica = new ArrayList<>(Arrays.asList(
             "Pendiente de una recta",
             "Ecuación de la recta y sus diferentes formas",
             "Distancia entre dos puntos",
@@ -45,17 +84,18 @@ public class StaticsMenus
             "Hipérbola"
 
     ));
-    public static List<String> trigonometría = new ArrayList<>(Arrays.asList(
+    public static List<String> trigonometria = new ArrayList<>(Arrays.asList(
             "Circulo Unitario",
-            "Cuadrántes y funciones trigonométricas",
+            "Cuadrantes y funciones trigonométricas",
             "Razones trigonométricas de angulos agudos",
-            "identidades trigonométricas",
-            "Ley de senos,cocenos y tangentes",
+            "Identidades trigonométricas",
+            "Ley de senos, cosenos y tangentes",
+            "Funciones hiperbólicas",
             "fórmula de Mollweides",
             "Ángulos notables",
             "Propiedades de relaciones entre funciones trigonométricas"
             ));
-    public static List<String> Derivadas = new ArrayList<>(Arrays.asList(
+    public static List<String> derivadas = new ArrayList<>(Arrays.asList(
             "Notación de la derivada",
             "Derivación por método general",
             "Fórmulas básicas de derivación",
@@ -65,9 +105,9 @@ public class StaticsMenus
             "Fórmulas de derivación de funciones trigonometricas inversas",
             "Fórmulas de derivación de funciones hiperbólicas",
             "Fórmulas de derivación de funciones hiperbólicas inversas",
-            "Límites"
+            "Propiedades de los límites y límites especiales"
     ));
-    public static List<String> Integrales = new ArrayList<>(Arrays.asList(
+    public static List<String> integrales = new ArrayList<>(Arrays.asList(
         "Teorema fundamental del cálculo",
         "Primer teorema fundamental del cálculo",
         "Segundo teorema fundamental del cálculo",
@@ -81,8 +121,7 @@ public class StaticsMenus
         "Fórmulas de integración con u²+a²",
         "Fórmulas de integración con u²-a²",
         "Fórmulas de integración con a²-u², u²<a²",
-        "Fórmulas de integración con √(u²+a²)",
-        "Fórmulas de integración con √(u²-a²)",
+        "Fórmulas de integración con √(u²+a²), √(u²-a²)",
         "Fórmulas de integración con √(a²-u²)",
         "Fórmulas de integración con au²+bu+c",
         "Fórmulas de integración con u³+a³",
@@ -96,7 +135,6 @@ public class StaticsMenus
         "Fórmulas de integración con csc(au)",
         "Fórmulas de integración con ln(u)",
         "Fórmulas de integración con eᵃᵘ",
-        "Fórmulas de integración con csc(au)",
         "Fórmulas de integración con senh(au)",
         "Fórmulas de integración con cosh(au)",
         "Método de integración por partes",
@@ -109,7 +147,7 @@ public class StaticsMenus
         "Aplicación de la integral centros de masas"
 
     ));
-    public static List<String> Vectorial = new ArrayList<>(Arrays.asList(
+    public static List<String> vectorial = new ArrayList<>(Arrays.asList(
 
             "Vectores",
             "Tangente de una curva",
@@ -129,7 +167,52 @@ public class StaticsMenus
             "Derivada direccional y gradiente",
             "Integración múltiple"
     ));
-    public static List<String> Finacieras = new ArrayList<>(Arrays.asList(
+
+    public static List<String> ecuaciones = new ArrayList<>(Arrays.asList(
+
+            "Propiedades de las constantes",
+            "Ecuación diferencial separable",
+            "Ecuación diferencial homogénea",
+            "Ecuación diferencial exacta",
+            "Ecuación diferencial lineal de primer orden",
+            "Ecuación diferencial lineal de orden superior",
+            "Ecuación diferencial con coef. constante",
+            "Series de Fourier",
+            "Simetría par e impar",
+            "Simetría de media onda",
+            "Simetría de un cuarto de onda par e impar",
+            "Función de impulso unitario δ(t)",
+            "Forma compleja de series de Fourier",
+            "Tranformada y T. inversa de Fourier",
+            "Tranformada de Fourier de sen y cos",
+            "Tabla de transformadas de Fourier",
+            "Convolución",
+            "Tranformada de Laplace",
+            "Tabla de Tranformadas de Laplace",
+            "Tabla de operaciones de la transformada de laplace",
+            "Tabla de Tranformadas de Laplace inversa"
+
+    ));
+    public static List<String> pYE = new ArrayList<>(Arrays.asList(
+
+
+            "Medidas de tendencia central en datos no agrupados",
+            "Medidas de dispersión en datos no agrupados",
+            "Medidas de posición en datos no agrupados",
+            "Agrupación de datos",
+            "Medidas de tendencia central en datos agrupados",
+            "Medidas de dispersión en datos agrupados",
+            "Medidas de posición en Datos Agrupados",
+            "Momentos estadísticos",
+            "Técnicas de conteo",
+            "Probabilidad",
+            "Operaciones con conjuntos",
+            "Distribución de probabilidad",
+            "Estimaciones",
+            "Proporciones",
+            "Intevalo de confianza"
+    ));
+    public static List<String> finacieras = new ArrayList<>(Arrays.asList(
 
             "Progresiones",
             "Interés simple",

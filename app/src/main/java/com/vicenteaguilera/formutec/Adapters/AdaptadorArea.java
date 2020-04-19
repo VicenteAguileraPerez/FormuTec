@@ -93,7 +93,7 @@ public class AdaptadorArea extends RecyclerView.Adapter<AdaptadorArea.AreaViewHo
                     intent.putExtra("area",getAdapterPosition());
                     intent.putExtra("subarea",i);
                     itemView.getContext().startActivity(intent);
-                    Toast.makeText(itemView.getContext(), getAdapterPosition()+"Selecciono" + i, Toast.LENGTH_SHORT).show();
+
                 }
             });
 
