@@ -12,6 +12,7 @@ public class FillRecyclerView
 
     public List<Area> getAreaList()
     {
+
         areaList = new ArrayList<>();
         areaList.add(new Area(R.drawable.algebra,R.string.algebra, StaticsMenus.algebra));
         areaList.add(new Area(R.drawable.algebra_lineal,R.string.algebra_lineal, StaticsMenus.algebraLineal));
