@@ -219,7 +219,7 @@ public class StaticsMenus
             "Descuento",
             "Interés compuesto",
             "Tasa de interés efectiva, nominal y equivalente",
-            "Anualidades Vencidad",
+            "Anualidades vencidas",
             "Anualidades anticipadas",
             "Depreciación Método de la línea recta",
             "Depreciación Método del porcentaje fijo",
