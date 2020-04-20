@@ -10,7 +10,7 @@ public class StaticsMenus
     public final static String EMAILSENDER ="formutecitsu@gmail.com";
     public final static String PASSWORD ="FormuTecITSU1234";//fira del app
 
-    public static List<String> algebra = new ArrayList<>(Arrays.asList(
+    static List<String> algebra = new ArrayList<>(Arrays.asList(
             "Propiedades aritméticas",
             "Propiedades de los radicales",
             "Propiedades de los exponentes",
@@ -27,7 +27,7 @@ public class StaticsMenus
             "Serie de Taylor",
             "Serie de Maclaurin",
             "Series de potencias"));
-    public static List<String> algebraLineal = new ArrayList<>(Arrays.asList(
+    static List<String> algebraLineal = new ArrayList<>(Arrays.asList(
             "Propiedades de los números complejos",
             "Módulo y argumento",
             "Conjugado de un complejo",
@@ -63,14 +63,14 @@ public class StaticsMenus
             "Proceso de Gram-Schmidt",
             "Vectores y valores propios"
             ));
-    public static List<String> geometria = new ArrayList<>(Arrays.asList(
+    static List<String> geometria = new ArrayList<>(Arrays.asList(
             "Ángulos de los polígonos",
             "Tipos de ángulos",
             "Conversiones de radianes a grados",
             "Áreas y Períemtros de figuras geométricas",
             "Volúmenes de cuerpos geométricos"
     ));
-    public static List<String> geometriaAnalitica = new ArrayList<>(Arrays.asList(
+    static List<String> geometriaAnalitica = new ArrayList<>(Arrays.asList(
             "Pendiente de una recta",
             "Ecuación de la recta y sus diferentes formas",
             "Distancia entre dos puntos",
@@ -82,7 +82,7 @@ public class StaticsMenus
             "Hipérbola"
 
     ));
-    public static List<String> trigonometria = new ArrayList<>(Arrays.asList(
+    static List<String> trigonometria = new ArrayList<>(Arrays.asList(
             "Circulo Unitario",
             "Cuadrantes y funciones trigonométricas",
             "Razones trigonométricas de angulos agudos",
@@ -93,7 +93,7 @@ public class StaticsMenus
             "Ángulos notables",
             "Propiedades de relaciones entre funciones trigonométricas"
             ));
-    public static List<String> derivadas = new ArrayList<>(Arrays.asList(
+    static List<String> derivadas = new ArrayList<>(Arrays.asList(
             "Notación de la derivada",
             "Derivación por método general",
             "Fórmulas básicas de derivación",
@@ -105,7 +105,7 @@ public class StaticsMenus
             "Fórmulas de derivación de funciones hiperbólicas inversas",
             "Propiedades de los límites y límites especiales"
     ));
-    public static List<String> integrales = new ArrayList<>(Arrays.asList(
+    static List<String> integrales = new ArrayList<>(Arrays.asList(
         "Teorema fundamental del cálculo",
         "Primer teorema fundamental del cálculo",
         "Segundo teorema fundamental del cálculo",
@@ -145,7 +145,7 @@ public class StaticsMenus
         "Aplicación de la integral centros de masas"
 
     ));
-    public static List<String> vectorial = new ArrayList<>(Arrays.asList(
+    static List<String> vectorial = new ArrayList<>(Arrays.asList(
 
             "Vectores",
             "Tangente de una curva",
@@ -166,7 +166,7 @@ public class StaticsMenus
             "Integración múltiple"
     ));
 
-    public static List<String> ecuaciones = new ArrayList<>(Arrays.asList(
+    static List<String> ecuaciones = new ArrayList<>(Arrays.asList(
 
             "Propiedades de las constantes",
             "Ecuación diferencial separable",
@@ -191,7 +191,7 @@ public class StaticsMenus
             "Tabla de Tranformadas de Laplace inversa"
 
     ));
-    public static List<String> pYE = new ArrayList<>(Arrays.asList(
+    static List<String> pYE = new ArrayList<>(Arrays.asList(
 
 
             "Medidas de tendencia central en datos no agrupados",
@@ -210,7 +210,7 @@ public class StaticsMenus
             "Proporciones",
             "Intevalo de confianza"
     ));
-    public static List<String> finacieras = new ArrayList<>(Arrays.asList(
+    static List<String> finacieras = new ArrayList<>(Arrays.asList(
 
             "Progresiones",
             "Interés simple",
