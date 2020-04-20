@@ -1,5 +1,6 @@
 package com.vicenteaguilera.formutec.Auxiliar;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.widget.Toast;
@@ -15,6 +16,7 @@ public class SenderAsyncTask extends AsyncTask<String, String, String>
     private String from, to, message;
     private ProgressDialog progressDialog;
     private Session session;
+    @SuppressLint("StaticFieldLeak")
     private QuejasSugerenciasActivity quejasSugerenciasActivity;
     private String nombre;
     private  boolean tipo;
