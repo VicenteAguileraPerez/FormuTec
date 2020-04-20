@@ -18,10 +18,7 @@ import com.vicenteaguilera.formutec.layouts_secundarias.QuejasSugerenciasActivit
 
 public class PrincipalActivity extends AppCompatActivity {
 
-    Intent intent;
-    RecyclerView recyclerView_areas;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager layoutManager;
+    private RecyclerView recyclerView_areas;
 
     FillRecyclerView fillRecyclerView;
     @Override
@@ -39,11 +36,11 @@ public class PrincipalActivity extends AppCompatActivity {
         recyclerView_areas.setHasFixedSize(true);
 
         // use a linear layout manager
-        layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView_areas.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        mAdapter = new AdaptadorArea(fillRecyclerView.getAreaList());
+        RecyclerView.Adapter mAdapter = new AdaptadorArea(fillRecyclerView.getAreaList());
         recyclerView_areas.setAdapter(mAdapter);
     }
 
@@ -60,7 +57,7 @@ public class PrincipalActivity extends AppCompatActivity {
         switch (item.getItemId())
         {
             case R.id.about:
-                intent = new Intent(PrincipalActivity.this, AcercaActivity.class);
+                Intent intent = new Intent(PrincipalActivity.this, AcercaActivity.class);
                 startActivity(intent);
                 break;
             case R.id.complaints_and_suggestions:

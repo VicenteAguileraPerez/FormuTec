@@ -23,7 +23,7 @@ public class QuejasSugerenciasActivity extends AppCompatActivity {
 
     String nombre, email, mensaje;
     boolean tipo;
-    private  int REQUEST_ACCESS_FINE = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +49,7 @@ public class QuejasSugerenciasActivity extends AppCompatActivity {
                 {
                     if (radioButton_sugerencia.isChecked() || radioButton_queja.isChecked())
                     {
-                        tipo = radioButton_queja.isChecked() ? true : false;
+                        tipo = radioButton_queja.isChecked();
                         sendEmailWithGmail(email, mensaje, nombre, tipo);
                         cleanCasillas();
                     }
@@ -87,7 +87,7 @@ public class QuejasSugerenciasActivity extends AppCompatActivity {
     }
     private boolean evaluarEmail(String email)
     {
-        String vectorEmail[] = email.split("@");
+        String[] vectorEmail = email.split("@");
         boolean bandera;
         if(vectorEmail.length==2)
         {

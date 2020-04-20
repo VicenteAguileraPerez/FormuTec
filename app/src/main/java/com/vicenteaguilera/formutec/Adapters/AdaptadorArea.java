@@ -5,17 +5,13 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.vicenteaguilera.formutec.Model.Area;
 import com.vicenteaguilera.formutec.R;
 import com.vicenteaguilera.formutec.layouts_principales.FormulaActivity;
@@ -55,7 +51,7 @@ public class AdaptadorArea extends RecyclerView.Adapter<AdaptadorArea.AreaViewHo
     public int getItemCount() {
         return listaAreas.size();
     }
-    public class AreaViewHolder extends RecyclerView.ViewHolder
+    class AreaViewHolder extends RecyclerView.ViewHolder
     {
         ConstraintLayout constraintLayout_container;
         ImageView imageView_area;
@@ -64,7 +60,7 @@ public class AdaptadorArea extends RecyclerView.Adapter<AdaptadorArea.AreaViewHo
         ListView listView_lista;
         View view;
         @SuppressLint("ClickableViewAccessibility")
-        public AreaViewHolder(@NonNull View itemView) {
+        AreaViewHolder(@NonNull View itemView) {
             super(itemView);
             constraintLayout_container = itemView.findViewById(R.id.container);
             imageView_area = itemView.findViewById(R.id.imageView_image_area);
@@ -83,18 +79,14 @@ public class AdaptadorArea extends RecyclerView.Adapter<AdaptadorArea.AreaViewHo
 
 
             });
-            listView_lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> adapterView, View view2, int i, long l)
-                {
-                    String titulo = itemView.getContext().getResources().getString(listaAreas.get(getAdapterPosition()).getTitle());
-                    Intent intent = new Intent(itemView.getContext(), FormulaActivity.class);
-                    intent.putExtra("titulo",titulo);
-                    intent.putExtra("area",getAdapterPosition());
-                    intent.putExtra("subarea",i);
-                    itemView.getContext().startActivity(intent);
+            listView_lista.setOnItemClickListener((adapterView, view2, i, l) -> {
+                String titulo = itemView.getContext().getResources().getString(listaAreas.get(getAdapterPosition()).getTitle());
+                Intent intent = new Intent(itemView.getContext(), FormulaActivity.class);
+                intent.putExtra("titulo",titulo);
+                intent.putExtra("area",getAdapterPosition());
+                intent.putExtra("subarea",i);
+                itemView.getContext().startActivity(intent);
 
-                }
             });
 
             // Setting on Touch Listener for handling the touch inside ScrollView

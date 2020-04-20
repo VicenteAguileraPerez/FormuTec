@@ -19,7 +19,7 @@ public class FormulaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formula);
         Intent intent = getIntent();
-        setTitle(Objects.requireNonNull(intent.getExtras()).get("titulo").toString());
+        setTitle(Objects.requireNonNull(Objects.requireNonNull(intent.getExtras()).get("titulo")).toString());
        listView_items = findViewById(R.id.listView_imagenes);
 
 
