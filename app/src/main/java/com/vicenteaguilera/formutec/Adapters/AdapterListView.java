@@ -1,27 +1,22 @@
 package com.vicenteaguilera.formutec.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.vicenteaguilera.formutec.R;
-
 import java.util.List;
 
 public class AdapterListView extends BaseAdapter {
-    List<Integer> imagenes;
-    Context context;
-    LayoutInflater layoutInflater;
+    private List<Integer> imagenes;
+    private LayoutInflater layoutInflater;
 
     public AdapterListView(List<Integer> imagenes, Context context)
     {
         this.imagenes = imagenes;
-        this.context = context;
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -40,6 +35,7 @@ public class AdapterListView extends BaseAdapter {
         return 0;
     }
 
+    @SuppressLint("ViewHolder")
     @Override
     public View getView(int position, View view, ViewGroup viewGroup)
     {

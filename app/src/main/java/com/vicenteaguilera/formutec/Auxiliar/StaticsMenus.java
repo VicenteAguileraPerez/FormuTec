@@ -1,7 +1,5 @@
 package com.vicenteaguilera.formutec.Auxiliar;
 
-import android.text.Html;
-import android.text.SpannableString;
 
 import java.util.ArrayList;
 import java.util.Arrays;
