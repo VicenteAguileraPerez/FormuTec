@@ -22,6 +22,7 @@
     <string name="ecuaciones_diferenciales">Ecuaciones Diferenciales</string>
     <string name="probabilidad_estadistica">Probabilidad y Estadística</string>
     <string name="matematicas_financieras">Matemáticas Financieras</string>
+    <string name="todo">TODO</string>
 
 
 </resources>

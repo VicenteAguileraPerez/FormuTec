@@ -151,8 +151,8 @@ public class StaticsMenus
 
             "Vectores",
             "Tangente de una curva",
-            "Componentes de la velocidad",
             "Área encerrada por una curva",
+            "Componentes de la velocidad",
             "Longitud de arco",
             "Cálculo de coordenadas polares",
             "Funciones Vectoriales",

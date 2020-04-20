@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.vicenteaguilera.formutec.Adapters.AdapterListView;
 import com.vicenteaguilera.formutec.Auxiliar.StaticsImageSubareas;
 import com.vicenteaguilera.formutec.R;
 
 public class FormulaActivity extends AppCompatActivity {
 
-    ImageView imageView_1,imageView_2,imageView_3;
+   // ImageView imageView_1,imageView_2,imageView_3;
     ListView listView_items;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +21,8 @@ public class FormulaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formula);
         Intent intent = getIntent();
         setTitle(intent.getExtras().get("titulo").toString());
-       // listView_items = findViewById(R.id.list_view_items);
-        imageView_1 = findViewById(R.id.imageView);
-        //imageView_2 = findViewById(R.id.imageView_2);
-        //imageView_3 = findViewById(R.id.imageView_3);
+       listView_items = findViewById(R.id.listView_imagenes);
+
 
 
         int area= (int) intent.getExtras().get("area");
@@ -38,37 +37,37 @@ public class FormulaActivity extends AppCompatActivity {
         switch (area)
         {
             case 0:
-                imageView_1.setImageResource(StaticsImageSubareas.AL.get(position));
+                listView_items.setAdapter(new AdapterListView(StaticsImageSubareas.AL.get(position),this));
                 break;
             case 1:
-                imageView_1.setImageResource(StaticsImageSubareas.ALLIN.get(position));
+                listView_items.setAdapter(new AdapterListView(StaticsImageSubareas.ALLIN.get(position),this));
                 break;
             case 2:
-                imageView_1.setImageResource(StaticsImageSubareas.GEO.get(position));
+                listView_items.setAdapter(new AdapterListView(StaticsImageSubareas.GEO.get(position),this));
                 break;
             case 3:
-                imageView_1.setImageResource(StaticsImageSubareas.GEOANALITIC.get(position));
+                listView_items.setAdapter(new AdapterListView(StaticsImageSubareas.GEOANALITIC.get(position),this));
                 break;
             case 4:
-                imageView_1.setImageResource(StaticsImageSubareas.TRI.get(position));
+               // imageView_1.setImageResource(StaticsImageSubareas.TRI.get(position));
                 break;
             case 5:
-                imageView_1.setImageResource(StaticsImageSubareas.CD.get(position));
+                //imageView_1.setImageResource(StaticsImageSubareas.CD.get(position));
                 break;
             case 6:
-                imageView_1.setImageResource(StaticsImageSubareas.CI.get(position));
+               // imageView_1.setImageResource(StaticsImageSubareas.CI.get(position));
                 break;
             case 7:
-                imageView_1.setImageResource(StaticsImageSubareas.CV.get(position));
+                listView_items.setAdapter(new AdapterListView(StaticsImageSubareas.CV.get(position),this));
                 break;
             case 8:
-                imageView_1.setImageResource(StaticsImageSubareas.ED.get(position));
+              //  imageView_1.setImageResource(StaticsImageSubareas.ED.get(position));
                 break;
             case 9:
-                imageView_1.setImageResource(StaticsImageSubareas.PYE.get(position));
+               // imageView_1.setImageResource(StaticsImageSubareas.PYE.get(position));
                 break;
             case 10:
-                imageView_1.setImageResource(StaticsImageSubareas.MF.get(position));
+                listView_items.setAdapter(new AdapterListView(StaticsImageSubareas.MF.get(position),this));
                 break;
         }
     }
