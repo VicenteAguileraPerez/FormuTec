@@ -12,7 +12,7 @@ import com.vicenteaguilera.formutec.R;
 
 public class FormulaActivity extends AppCompatActivity {
 
-    ImageView imageView;
+    ImageView imageView_1,imageView_2,imageView_3;
     ListView listView_items;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,11 @@ public class FormulaActivity extends AppCompatActivity {
         Intent intent = getIntent();
         setTitle(intent.getExtras().get("titulo").toString());
        // listView_items = findViewById(R.id.list_view_items);
-        imageView = findViewById(R.id.imageView);
+        imageView_1 = findViewById(R.id.imageView_1);
+        //imageView_2 = findViewById(R.id.imageView_2);
+        //imageView_3 = findViewById(R.id.imageView_3);
+
+
         int area= (int) intent.getExtras().get("area");
         int subarea= (int) intent.getExtras().get("subarea");
         area(area,subarea);
@@ -34,37 +38,37 @@ public class FormulaActivity extends AppCompatActivity {
         switch (area)
         {
             case 0:
-                imageView.setImageResource(StaticsImageSubareas.AL.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.AL.get(position));
                 break;
             case 1:
-                imageView.setImageResource(StaticsImageSubareas.ALLIN.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.ALLIN.get(position));
                 break;
             case 2:
-                imageView.setImageResource(StaticsImageSubareas.GEO.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.GEO.get(position));
                 break;
             case 3:
-                imageView.setImageResource(StaticsImageSubareas.GEOANALITIC.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.GEOANALITIC.get(position));
                 break;
             case 4:
-                imageView.setImageResource(StaticsImageSubareas.TRI.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.TRI.get(position));
                 break;
             case 5:
-                imageView.setImageResource(StaticsImageSubareas.CD.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.CD.get(position));
                 break;
             case 6:
-                imageView.setImageResource(StaticsImageSubareas.CI.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.CI.get(position));
                 break;
             case 7:
-                imageView.setImageResource(StaticsImageSubareas.CV.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.CV.get(position));
                 break;
             case 8:
-                imageView.setImageResource(StaticsImageSubareas.ED.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.ED.get(position));
                 break;
             case 9:
-                imageView.setImageResource(StaticsImageSubareas.PYE.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.PYE.get(position));
                 break;
             case 10:
-                imageView.setImageResource(StaticsImageSubareas.MF.get(position));
+                imageView_1.setImageResource(StaticsImageSubareas.MF.get(position));
                 break;
         }
     }

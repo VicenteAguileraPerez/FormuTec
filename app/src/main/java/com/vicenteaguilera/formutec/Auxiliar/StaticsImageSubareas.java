@@ -61,7 +61,7 @@ public class StaticsImageSubareas
 
     public static List<Integer> PYE = new ArrayList<>(Arrays.asList(R.drawable.j_10_1_medidas_central_dna,R.drawable.j_10_2_medidas_disper_dna,R.drawable.j_10_3_medidas_posic_dna,
             R.drawable.j_10_4_agrupacion,R.drawable.j_10_5_medidas_central_da,R.drawable.j_10_6_medidas_disper_da,R.drawable.j_10_7_medidas_posic_da,R.drawable.j_10_8_momentos_esta,
-            R.drawable.j_10_910_probabilidad,R.drawable.j_10_910_probabilidad,R.drawable.j_10_911_opc_conjuntos,R.drawable.j_10_912_distribuciones,R.drawable.j_10_913_estimaciones,
+            R.drawable.j_10_900_tecnicas_conteo,R.drawable.j_10_910_probabilidad,R.drawable.j_10_911_opc_conjuntos,R.drawable.j_10_912_distribuciones,R.drawable.j_10_913_estimaciones,
             R.drawable.j_10_914_proporciones,R.drawable.j_10_915_confianza));
 
     public static List<Integer> MF = new ArrayList<>(Arrays.asList(R.drawable.k_11_1_mf_progresiones,R.drawable.k_11_2_mf_interes_simple,R.drawable.k_11_3_mf_descuento,
