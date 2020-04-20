@@ -8,13 +8,10 @@ import java.util.List;
 
 public class FillRecyclerView
 {
-    List<Area> areaList;
+    private List<Area> areaList = new ArrayList<>();
 
     public List<Area> getAreaList()
     {
-
-
-        areaList = new ArrayList<>();
         areaList.add(new Area(R.drawable.algebra,R.string.algebra, StaticsMenus.algebra));
         areaList.add(new Area(R.drawable.algebra_lineal,R.string.algebra_lineal, StaticsMenus.algebraLineal));
         areaList.add(new Area(R.drawable.geometria,R.string.geometria, StaticsMenus.geometria));
