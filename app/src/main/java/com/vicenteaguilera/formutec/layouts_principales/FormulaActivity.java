@@ -21,7 +21,7 @@ public class FormulaActivity extends AppCompatActivity {
         Intent intent = getIntent();
         setTitle(intent.getExtras().get("titulo").toString());
        // listView_items = findViewById(R.id.list_view_items);
-        imageView_1 = findViewById(R.id.imageView_1);
+        imageView_1 = findViewById(R.id.imageView);
         //imageView_2 = findViewById(R.id.imageView_2);
         //imageView_3 = findViewById(R.id.imageView_3);
 
