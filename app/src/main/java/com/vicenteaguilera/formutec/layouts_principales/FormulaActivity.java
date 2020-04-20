@@ -4,23 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
 import android.widget.ListView;
-
 import com.vicenteaguilera.formutec.Adapters.AdapterListView;
 import com.vicenteaguilera.formutec.Auxiliar.StaticsImageSubareas;
 import com.vicenteaguilera.formutec.R;
 
+import java.util.Objects;
+
 public class FormulaActivity extends AppCompatActivity {
 
-   // ImageView imageView_1,imageView_2,imageView_3;
     ListView listView_items;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formula);
         Intent intent = getIntent();
-        setTitle(intent.getExtras().get("titulo").toString());
+        setTitle(Objects.requireNonNull(intent.getExtras()).get("titulo").toString());
        listView_items = findViewById(R.id.listView_imagenes);
 
 
