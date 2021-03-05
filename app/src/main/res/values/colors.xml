@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#7D9DD0</color>
+    <color name="colorPrimary">#2B53A3</color>
     <color name="colorPrimaryDark">#2B53A3</color>
     <color name="colorAccent">#2B53A3</color>
     <color name="colorblue1">#2B53A3</color>
+    <color name="colorblue2">#0F1838</color>
     <color name="colorwhite">#FFFFFF</color>
     <color name="colorgray">#707070</color>
+    <color name="ic_sigma_background">#14214D</color>
 </resources>

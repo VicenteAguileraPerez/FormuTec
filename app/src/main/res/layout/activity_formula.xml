@@ -15,6 +15,7 @@
                 android:id="@+id/listView_imagenes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:divider="@color/colorwhite"
                 android:dividerHeight="0dp"
                 />

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.vicenteaguilera.formutec">
+    package="com.vicenteaguilera_tecnm_uruapan.formutec">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:icon="@mipmap/ic_sigma"
         android:label="@string/app_name"
@@ -16,23 +15,23 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
-        <activity android:name=".layouts_principales.FormulaActivity"></activity>
+        <activity android:name="com.vicenteaguilera_tecnm_uruapan.formutec.layouts.layouts_principales.FormulaActivity" />
         <activity
-            android:name=".layouts_secundarias.QuejasSugerenciasActivity"
-            android:parentActivityName=".layouts_principales.PrincipalActivity" />
+            android:name="com.vicenteaguilera_tecnm_uruapan.formutec.layouts.layouts_secundarias.QuejasSugerenciasActivity"
+            android:parentActivityName="com.vicenteaguilera_tecnm_uruapan.formutec.layouts.layouts_principales.PrincipalActivity" />
         <activity
-            android:name=".layouts_secundarias.AcercaActivity"
-            android:parentActivityName=".layouts_principales.PrincipalActivity" />
-        <activity android:name=".layouts_principales.PrincipalActivity" />
+            android:name="com.vicenteaguilera_tecnm_uruapan.formutec.layouts.layouts_secundarias.AcercaActivity"
+            android:parentActivityName="com.vicenteaguilera_tecnm_uruapan.formutec.layouts.layouts_principales.PrincipalActivity" />
+        <activity android:name="com.vicenteaguilera_tecnm_uruapan.formutec.layouts.layouts_principales.PrincipalActivity" />
         <activity
-            android:name=".MainActivity"
-            android:parentActivityName=".MainActivity">
+            android:name="com.vicenteaguilera_tecnm_uruapan.formutec.MainActivity"
+            android:parentActivityName="com.vicenteaguilera_tecnm_uruapan.formutec.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
 
 </manifest>
+
