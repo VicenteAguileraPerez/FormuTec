@@ -31,6 +31,7 @@ public class QuejasSugerenciasActivity extends AppCompatActivity {
     private MaterialButton button_enviar;
 
     private String nombre, email, mensaje;
+
     boolean tipo;
 
     @Override
