@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -64,6 +65,9 @@ public class PrincipalActivity extends AppCompatActivity {
                 intent = new Intent(PrincipalActivity.this, QuejasSugerenciasActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.manual:
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://firebasestorage.googleapis.com/v0/b/formutecitsu-18.appspot.com/o/Manual%20de%20uruario%20FormuTec.pdf?alt=media&token=2db70125-f24a-40c4-a4da-6bf4640bb57d"));
+                startActivity(browserIntent);
         }
 
         return super.onOptionsItemSelected(item);

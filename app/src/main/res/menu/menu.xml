@@ -23,4 +23,9 @@
         android:title="@string/quejas_y_sugerencias"
         android:orderInCategory="2"
         app:showAsAction="never" />
+    <item android:id="@+id/manual"
+        android:title="Manual de Usuario"
+        android:orderInCategory="2"
+        app:showAsAction="never" />
+
 </menu>
